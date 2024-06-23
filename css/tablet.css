@@ -1,0 +1,132 @@
+/* Menu điều hướng */
+
+/* Chuyển các thẻ sang ngang, canh giữa, tạo đường viền, màu nền */
+#nav-tablet {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ccc;
+  background-color: #ebf7f7;
+}
+
+.nav-tablet-hidden {
+  display: none;
+  position: sticky;
+  top: -1px;
+  z-index: 10;
+}
+
+/* Đổi màu, bỏ gạch dưới */
+#nav-tablet a {
+  text-decoration: none;
+  color: #000;
+}
+
+#nav-tablet .nav-tablet-box {
+  padding: 20px 30px;
+  border: 1px solid #ccc;
+  text-transform: uppercase;
+}
+
+/* Tạo hiệu ứng khi rê chuột qua thanh điều hướng */
+#nav-tablet .nav-tablet-box:hover {
+  background-color: #ccccccc7;
+}
+
+/* @media (min-width: 768px) and (max-width: 1008px) { */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .nav-tablet-hidden {
+    display: block;
+  }
+
+  .target {
+    margin: 0 30px 80px;
+  }
+
+  /* Điều chỉnh kích thước ảnh */
+  .cert-content img {
+    /* width: 90%; */
+    /* justify-content: center; */
+    /* margin-left: 5px; */
+  }
+
+  .cert-box {
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
+  .cert-border img {
+    /* margin: 0 30px; */
+  }
+
+  .cert-border {
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  .cert-contains {
+    /* margin: 0 40px; */
+    margin-left: 40px;
+  }
+
+  .col-border {
+    position: relative;
+  }
+  .mid-border {
+    position: absolute;
+    border-left: 1px solid #d6c08d;
+    height: 300px;
+    top: 0;
+  }
+
+  .border-images {
+    border: none;
+  }
+
+  /* Tăng khoảng cách 2 cột chứng chỉ */
+  .vertical-align {
+    padding: 0px 20px;
+    /* padding-right: 30px; */
+    height: 100%;
+  }
+
+  .row-padding {
+    padding-top: 40px;
+  }
+  /* =============================== */
+  /* Dự án */
+
+  .pj-container table td:first-child {
+    min-width: 70px;
+  }
+
+  .pj-container .pj-icon {
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .pj-icon .pj-year {
+    margin-left: 5px;
+  }
+}
+
+/* tablet and phone */
+@media (max-width: 1200px) {
+  .nav-pc-hidden {
+    display: none;
+  }
+}
+
+/* @media (min-width: 1009px) and (max-width: 1200px) {
+  .cert-contains {
+    margin-left: 55px;
+  }
+
+  .cert-contains img {
+    width: 90%;
+    margin-left: 10px;
+  }
+
+  .row-padding {
+    padding-top: 30px;
+  }
+} */

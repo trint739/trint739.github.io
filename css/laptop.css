@@ -1,0 +1,577 @@
+/* Reset CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Set font cho web và hiệu ứng cuộn trang */
+html {
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Ảnh banner */
+#banner {
+  padding-top: 50%;
+  background: url("/images/banner.jpg") top center / cover no-repeat;
+  position: relative;
+}
+
+.banner {
+  height: 80%;
+}
+
+.heading {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 20%;
+  color: #fff;
+}
+
+.text-name {
+  font-size: 60px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.text-name2 {
+  font-size: 20px;
+}
+
+/* =========================================================== */
+/* Menu điều hướng */
+
+.nav-pc-hidden {
+  position: sticky;
+  top: -1px;
+  z-index: 10;
+}
+
+/* Chuyển các thẻ sang ngang, canh giữa, tạo đường viền, màu nền */
+#nav-pc {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ccc;
+  background-color: #ebf7f7;
+}
+
+/* Đổi màu, bỏ gạch dưới */
+#nav-pc a {
+  text-decoration: none;
+  color: #000;
+}
+
+#nav-pc .nav-pc-box {
+  padding: 20px 30px;
+  border: 1px solid #ccc;
+  text-transform: uppercase;
+}
+
+/* Tạo hiệu ứng khi rê chuột qua thanh điều hướng */
+#nav-pc .nav-pc-box:hover {
+  background-color: #ccccccc7;
+}
+
+.box-avt {
+  width: 400px;
+}
+
+.avatar {
+  width: 120px;
+  display: inline-block;
+  position: absolute;
+  top: -38px;
+  border-radius: 50%;
+  border: 8px solid #fff;
+  margin-left: 10px;
+}
+
+/* Đổi màu icon */
+.icon-color {
+  color: #37b8e7;
+}
+
+/* =================================== */
+/* Phần thông tin cá nhân */
+
+.target {
+  margin: 0 30px 80px 150px;
+  /* margin: 0 30px 50px 80px; */
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.infor {
+  margin: 0 30px;
+  padding-top: 60px;
+}
+
+.target-text p {
+  text-align: justify;
+}
+
+.information-title {
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.information-color1,
+.information-color2 {
+  height: 100%;
+}
+
+/* màu nền cột  mục tiêu nghề nghiệp*/
+.information-color1 {
+  background-color: #f5f5f5;
+}
+
+/* màu nền cột thông tin cá nhân*/
+.information-color2 {
+  background-color: #f0f0f0;
+}
+
+.infor table {
+  width: 360px;
+}
+
+/* .infor table .inf-text {
+  font-weight: 560;
+  color: #6a6969;
+} */
+
+.infor .inf-icon {
+  margin-top: 20px;
+}
+
+/* Tạo hiệu ứng bàn tay khi rê vào icon mxh */
+.infor .inf-icon:hover {
+  cursor: pointer;
+}
+
+/* Đổi màu chữ đoạn văn */
+.target-text,
+.inf-text {
+  color: #827d7d;
+}
+
+/* btn ẩn thông tin */
+.hide-info {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #bb7c17;
+  font-style: italic;
+  font-weight: 500;
+  padding: 3px 7px;
+  border: 1px solid #000;
+  max-width: 130px;
+  border-radius: 5px;
+  background-color: #f4ebe5;
+}
+
+.hide-info i {
+  font-size: 15px;
+}
+
+.hide-info:hover {
+  color: #dd2929;
+  transform: scale(0.98);
+  cursor: pointer;
+  border: 1px solid #dd2929;
+}
+
+/* Email Input */
+#email {
+  width: 100%;
+  padding: 5px 20px;
+  outline: none;
+}
+
+#email:hover {
+  border: 2px solid #37b8e7;
+}
+
+.notify {
+  margin: 10px 0 20px;
+}
+
+.notify-color {
+  color: #f00;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.btn-submit {
+  padding: 6px 12px;
+  outline: none;
+  border: none;
+  background-color: #1466e2;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.btn-submit:hover {
+  opacity: 0.8;
+  transform: scale(0.95);
+}
+
+.hide {
+  display: none;
+}
+
+/* =============================== */
+/* Kinh nghiệm nghề nghiệp */
+.section-contain {
+  position: relative;
+}
+
+/* btn view more */
+.btn-view {
+  min-width: 120px;
+  font-size: 12px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 28px;
+  padding: 2px 0;
+  background-color: #f5f6bb;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.view-more {
+  display: none;
+}
+
+.btn-view:hover {
+  transform: scale(0.97);
+  opacity: 0.98;
+  color: #dd2929;
+  background-color: #eee0bf;
+}
+
+.ti-angle-down {
+  font-size: 10px;
+  margin-right: 5px;
+}
+
+/* ================ */
+
+.dots {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: #1466e2;
+  position: absolute;
+  top: 5.5px;
+  left: 0;
+}
+
+.content-contain {
+  margin-left: 30px;
+}
+
+/* Tạo khung viền các box */
+.section {
+  border: 1px solid #ccc;
+  height: 100%;
+}
+
+.section .section-title {
+  margin-top: 50px;
+  /* margin-bottom: 10px; */
+  font-weight: 600;
+  font-size: 26px;
+}
+
+/* Canh chỉnh nội dung của các box kinh nghiệm, học vấn ... */
+.section .section-box {
+  margin: 0 30px;
+  text-align: justify;
+}
+
+/* mốc time chữ nghiên */
+.section-content .time {
+  font-style: italic;
+}
+
+/* Chữ "hiện tại" nền xanh chữ trắng */
+.section-content .time span {
+  background-color: #1466e2;
+  color: #fff;
+  padding: 1px 6px;
+  border-radius: 6px;
+}
+
+.section-content .section-content-name {
+  font-weight: bold;
+  margin: 30px 0 5px;
+}
+
+.section-content .text-content {
+  margin: 10px 0 50px;
+}
+
+/* Layout 75%-25% "kinh nghiệm", "học vấn",... */
+.section-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.section-hover:hover .view-more {
+  display: block;
+}
+
+.section-title {
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+
+/* Tăng size, canh giữa icon */
+.icon {
+  font-size: 40px;
+  text-align: center;
+}
+
+/* Canh giữa icon theo trục y */
+.icon::before {
+  content: "";
+  line-height: 110px;
+}
+
+/* Grid tạo 3 cột trong sở thích */
+.section-box .hobby {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+/* Canh giữa icon theo trục x */
+.hobby-icon {
+  display: grid;
+  justify-content: center;
+}
+
+/* Tăng size, đổi màu icon */
+.hobby-icon i {
+  font-size: 20px;
+  color: #37b8e7;
+}
+
+/* Tạo viền tròn bao quanh icon */
+.hobby-icon div:first-child {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #37b8e7;
+  border-radius: 50%;
+  padding: 5px;
+  line-height: 30px;
+}
+
+.hobby-icon div:last-child {
+  margin-top: 15px;
+}
+
+.level {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0 20px;
+}
+
+.level .level-box {
+  background-color: #c4bfbf;
+
+  width: 50px;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.level .level-box:first-child {
+  background-color: #1466e2;
+}
+
+/* Ngôn ngữ */
+.language-contain {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+/* =================================== */
+/* Chứng chỉ - giải thưởng */
+
+.cert-content {
+  margin-top: 40px;
+  background-color: #f7f7f7;
+}
+
+/* Canh chỉnh tiêu đề */
+.cert-title {
+  margin: 0px 30px;
+  padding: 30px 0;
+  font-size: 26px;
+}
+
+/* Điều chỉnh size ảnh chứng chỉ */
+.cert-content img {
+  width: 100%;
+}
+
+.cert-border {
+  border-bottom: 1px solid #d6c08d;
+  padding: 15px 0;
+}
+
+.cert-content h5 {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-weight: 550;
+  font-size: 15px;
+}
+
+.border-images {
+  border-left: 1px solid #d6c08d;
+}
+
+.cert-box {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.cert-contains {
+  margin: 0 40px;
+}
+
+.vertical-align {
+  align-items: center;
+}
+
+/* ====================================================== */
+/* Dự án */
+
+.pj-title {
+  margin: 70px 0 20px;
+  font-size: 26px;
+}
+
+/* Tạo 3 cột dự án bằng nhau */
+.pj-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 35px;
+}
+
+/* Đường viền mỗi cột */
+.pj-container {
+  border: 1px solid #ccc;
+  height: 100%;
+}
+
+/* Điều chỉnh size ảnh */
+.pj-container img {
+  width: 100%;
+}
+
+/* Đièu chỉnh size chữ, lề tên pj */
+.pj-container .pj-name {
+  font-size: 20px;
+  /* margin: 10px 20px; */
+  width: 100%;
+}
+
+.pj-name a {
+  display: block;
+  padding: 20px;
+  width: 100%;
+  color: #0015ff;
+  text-decoration: none;
+}
+
+.title-hover {
+  padding: 0 !important;
+}
+
+.title-hover:hover a {
+  /* font-style: italic; */
+  background-color: #f5fcb5;
+  color: #ff0000eb;
+}
+
+.pj-container table td:first-child {
+  min-width: 100px;
+  vertical-align: top;
+  padding: 0 8px;
+}
+
+.pj-container .pj-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* chữ trắng nền xanh, bo góc */
+.pj-icon .pj-year {
+  background-color: #37b8e7;
+  color: #fff;
+  padding: 5px;
+  border-radius: 16px;
+  /* margin-left: 20px; */
+}
+
+/* Border phần dự án */
+.border-content {
+  border-bottom: 1px solid #ccc;
+  padding: 20px 10px;
+  display: flex;
+  margin: auto;
+}
+.pj-container table {
+  /* border: 1px solid black; */
+  border-collapse: collapse;
+  /* min-height: 150px; */
+}
+
+.border-none {
+  border: none;
+}
+
+/* =================================================== */
+/* Thông tin liên hệ */
+#footer {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  background-color: #f9f9f9;
+  padding: 10px;
+}
+
+.icon-facebook-circled,
+.icon-linkedin-circled,
+.icon-github-circled {
+  font-size: 30px;
+}
+
+#footer a {
+  display: inline-block;
+  /* padding: 20px 20px 10px 0; */
+  margin-top: 4px;
+  padding-right: 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+#footer .contact-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#footer .contact-box:hover {
+  background-color: #d0cccc;
+  font-style: italic;
+}

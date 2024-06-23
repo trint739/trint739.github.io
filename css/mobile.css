@@ -1,0 +1,103 @@
+/* Menu điều hướng */
+
+/* Chuyển các thẻ sang ngang, canh giữa, tạo đường viền, màu nền */
+#nav-mobile {
+  display: block;
+  position: sticky;
+  top: -1px;
+  z-index: 10;
+}
+
+.nav-mobile-hidden {
+  display: none;
+}
+
+/* Đổi màu, bỏ gạch dưới */
+#nav-mobile a {
+  text-decoration: none;
+  color: #000;
+}
+
+#nav-mobile .nav-mobile-box {
+  padding: 20px 30px;
+  /* border: 1px solid #ccc; */
+  text-transform: uppercase;
+}
+
+/* Tạo hiệu ứng khi rê chuột qua thanh điều hướng */
+/* #nav-mobile .nav-mobile-box:hover {
+  background-color: #ccccccc7;
+} */
+
+@media only screen and (max-width: 767px) {
+  .nav-mobile-hidden {
+    display: block;
+  }
+
+  /* Banner */
+
+  .text-name {
+    font-size: 35px;
+  }
+
+  .text-name2 {
+    font-size: 18px;
+  }
+
+  /* ============= */
+
+  #information {
+    display: block;
+  }
+
+  .target {
+    margin: 0 10px;
+    padding: 50px 0;
+  }
+
+  /* ====================== */
+  /* Phần thông tin cá nhân */
+  .infor {
+    margin: 0 10px;
+    padding: 50px 0;
+  }
+
+  /* Sở thích */
+  .hobby {
+    margin-bottom: 30px;
+  }
+
+  /* =================================== */
+  /* Chứng chỉ - giải thưởng */
+
+  .border-images {
+    border: none;
+  }
+
+  .row-padding-mobile {
+    padding-top: 25px;
+  }
+
+  .mid-border {
+    border: none;
+  }
+
+  /* Footer*/
+  #footer {
+    gap: 10px;
+  }
+
+  .icon-facebook-circled,
+  .icon-linkedin-circled,
+  .icon-github-circled {
+    font-size: 20px;
+  }
+
+  #footer a {
+    margin-top: 1px;
+  }
+
+  #footer .contact-box {
+    gap: 2px;
+  }
+}
